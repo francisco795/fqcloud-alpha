@@ -1,9 +1,13 @@
 <?php
 
-$conexion = new mysqli('127.0.0.1','root','','fqc1');
+$host = "localhost";
+$user = "root";
+$clave = "";
+$bd  = "fqc";
 
-if($conexion ->connect_errno){
-    die('Algo salió mal :(');
-}else{
-    echo 'Conexión exitosa!';
-}
+$conexion = mysqli_connect($host,$user,$clave,$bd);
+
+
+
+
+?>

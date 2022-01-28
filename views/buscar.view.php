@@ -53,7 +53,7 @@ include 'conexion.php';
                 <td>Opciones</td>
             </tr>
             <?php 
-            $sql = "SELECT * FROM users";
+            $sql = "SELECT * FROM users WHERE nombre = $buscar_nombre";
             $result = mysqli_query($conexion,$sql);
 
             while($show=mysqli_fetch_array($result)){
