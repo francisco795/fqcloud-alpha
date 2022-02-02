@@ -18,12 +18,12 @@
 
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"method="POST" class="formulario" name="login">
         <div class="form-group">
-            <i class="icono izquierda fa fa-user"></i><input type="text" name="usuario" class="usuario" placeholder="Usuario">
+            <i class="icono izquierda fa fa-user"></i><input type="text" name="usuario" class="usuario" placeholder="Correo FQC">
         </div>
 
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"method="POST" class="formulario" name="login">
         <div class="form-group">
-            <i class="icono izquierda fa fa-lock"></i><input type="password" name="password" class="password_btn" placeholder="Confirma tu contraseña">
+            <i class="icono izquierda fa fa-lock"></i><input type="password" name="password" class="password_btn" placeholder="Contraseña">
             <i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
         </div>
         <?php if(!empty($errores)): ?>

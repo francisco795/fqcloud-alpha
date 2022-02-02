@@ -8,7 +8,7 @@
 <script src="https://kit.fontawesome.com/bacaf2f5fc.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/estilos2.css">
 <link rel="stylesheet" type="text/css"  href="estilos2.css">
-<title>Inicio</title>
+<title>Registra un usuario</title>
 <meta name="keywords" content="Estambres, Tejidos">
 </head>
 <body>
