@@ -5,7 +5,7 @@ $user = "root";
 $clave = "";
 $bd  = "fqc";
 
-$conexion = mysqli_connect($host,$user,$clave,$bd);
+$conexion = new mysqli($host,$user,$clave,$bd);
 
 
 

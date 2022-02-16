@@ -11,7 +11,7 @@ include 'conexion.php';
 <script src="https://kit.fontawesome.com/bacaf2f5fc.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/estilos2.css">
 <link rel="stylesheet" type="text/css"  href="estilos2.css">
-<title>Usuarios disponibles</title>
+<title class="text-center">Usuarios disponibles</title>
 <meta name="keywords" content="Estambres, Tejidos">
 </head>
 <body>
@@ -25,16 +25,11 @@ include 'conexion.php';
             <li class="nav-item">
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
+            <li class="nav-item">
+                <a href="buscar.php" class="nav-item">Busquemos un usuario</a>
+            </li>
         </ul>
     </div>
-
-    <div class="contenedor2">
-        <form method="POST" action="buscar.php">
-            <input type="text" name="buscar_nombre" placeholder="Buscar un usuario">
-            <button class="submit" action="buscar.php" name="busca">Buscar</button>
-        </form>
-        
-        </input>
         <h2 class="text-center">Usuarios disponibles</h2>
         <table border="1" bgcolor="gray">
             <tr>

@@ -1,4 +1,5 @@
 <?php
+//include 'views/contenido.view.php';
 include 'conexion.php';
 ?>
 <!DOCTYPE html>
@@ -20,65 +21,44 @@ include 'conexion.php';
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="#" class="nav-item">Usuarios disponibles</a>
+                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
             </li>
             <li class="nav-item">
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
         </ul>
     </div>
-
-    <div class="contenedor2">
-        <form method="POST" action="buscar.php">
-            <input type="text" name="buscar_nombre" placeholder="Buscar un usuario">
-            <button class="submit" action="buscar.php" name="busca">Buscar</button>
-        </form>
-        
-        </input>
+    <form action="" method="POST">
+        <input type="text" name="busqueda">
+        <input type="submit" name="enviar" value="buscar_nombre" placeholder="Buscar">
+    </form>
         <h2 class="text-center">Usuarios activos</h2>
-        <table border="1" bgcolor="gray">
-            <tr>
-                <td class="text-center">id</td>
-                <td class="text-center">Nombre</td>
-                <td class="text-center">Correo</td>
-                <td class="text-center">Área</td>
-                <td class="text-center">Usuario en red</td>
-                <td class="text-center">Contraseña de red</td>
-                <td class="text-center">idAnydesk</td>
-                <td class="text-center">Contraseña de anydesk</td>
-                <td class="text-center">Contraseña de Drive</td>
-                <td class="text-center">Contraseña de Correo</td>
-                <td class="text-center">Skype</td>
-                <td class="text-center">Contraseña de Skype</td>
-                <td>Opciones</td>
-            </tr>
-            <?php 
-            $sql = "SELECT * FROM users WHERE nombre = $buscar_nombre";
-            $result = mysqli_query($conexion,$sql);
-
-            while($show=mysqli_fetch_array($result)){
-
-
-            ?>
+            <table border="1" bgcolor="gray">
                 <tr>
-                    <td class="text-center"><?php echo $show['id']?></td>
-                    <td class="text-center"><?php echo $show['nombre']?></td>
-                    <td class="text-center"><?php echo $show['correo']?></td>
-                    <td class="text-center"><?php echo $show['area']?></td>
-                    <td class="text-center"><?php echo $show['userred']?></td>
-                    <td class="text-center"><?php echo $show['passred']?></td>
-                    <td class="text-center"><?php echo $show['idanydesk']?></td>
-                    <td class="text-center"><?php echo $show['passanydesk']?></td>
-                    <td class="text-center"><?php echo $show['userdrive']?></td>
-                    <td class="text-center"><?php echo $show['passdrive']?></td>
-                    <td class="text-center"><?php echo $show['passcorreo']?></td>
-                    <td class="text-center"><?php echo $show['skype']?></td>
-                    <td class="text-center"><?php echo $show['passskype']?></td>
-                    <td><a href="#">Editar</a>-<a href="#">Borrar</a></td>
+                    <td class="text-center">id</td>
+                    <td class="text-center">Nombre</td>
+                    <td class="text-center">Correo</td>
+                    <td class="text-center">Área</td>
+                    <td class="text-center">Usuario en red</td>
+                    <td class="text-center">Contraseña de red</td>
+                    <td class="text-center">idAnydesk</td>
+                    <td class="text-center">Contraseña de anydesk</td>
+                    <td class="text-center">Usuario de Drive</td>
+                    <td class="text-center">Contraseña de Drive</td>
+                    <td class="text-center">Contraseña de Correo</td>
+                    <td class="text-center">Skype</td>
+                    <td class="text-center">Contraseña de Skype</td>
+                    
                 </tr>
-            <?php
-            } ?>
-        </table>
-    </div>
+                <?php
+                if(isset($_POST['enviar'])){
+                    $busqueda = $_POST['busqueda'];
+                    $sql = $conexion->query("SELECT * FROM users WHERE nombre LIKE '%busqueda%'");
+                   // $resultado = mysqli_query($conexion,$sql);
+
+                    while($row = $sql->fetch_array()){
+                        echo $row['nombre']. '<br/>';
+                    }
+                }?>
+            </table>
 </body>
-</html>

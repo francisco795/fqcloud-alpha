@@ -23,7 +23,7 @@
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-item">Eliminar usuarios</a>
+                <a href="buscar.php" class="nav-item">Busquemos un usuario</a>
             </li>
         </ul>
     </div>
