@@ -26,10 +26,12 @@ include 'conexion.php';
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
             <li class="nav-item">
-                <a href="buscar.php" class="nav-item">Busquemos un usuarios</a>
+                <a href="buscar.php" clas="nav-item">Búsquemos un usuario</a>
             </li>
         </ul>
     </div>
+
+    </form> 
         <h2 class="text-center">Usuarios activos</h2>
         <table border="1" bgcolor="gray">
             <tr>
@@ -41,11 +43,14 @@ include 'conexion.php';
                 <td class="text-center">Contraseña de red</td>
                 <td class="text-center">idAnydesk</td>
                 <td class="text-center">Contraseña de anydesk</td>
-                <td class="text-center">Usuario de Drive</td>
-                <td class="text-center">Contraseña de Drive</td>
-                <td class="text-center">Contraseña de Correo</td>
-                <td class="text-center">Skype</td>
-                <td class="text-center">Contraseña de Skype</td>
+                <td class="text-center">Usuario de Google</td>
+                <td class="text-center">Contraseña de Google</td>
+                <td class="text-center">Usuario de Microsoft</td>
+                <td class="text-center">Contraseña de Microsoft</td>
+                <td class="text-center">Usuario de iCloud</td>
+                <td class="text-center">Contraseña de iCloud</td>
+                <td class="text-center">Pin de iCloud</td>
+                <td class="text-center">Opciones</td>
                 
             </tr>
             <?php 
@@ -65,12 +70,14 @@ include 'conexion.php';
                     <td class="text-center"><?php echo $show['passred']?></td>
                     <td class="text-center"><?php echo $show['idanydesk']?></td>
                     <td class="text-center"><?php echo $show['passanydesk']?></td>
-                    <td class="text-center"><?php echo $show['userdrive']?></td>
-                    <td class="text-center"><?php echo $show['passdrive']?></td>
-                    <td class="text-center"><?php echo $show['passcorreo']?></td>
-                    <td class="text-center"><?php echo $show['skype']?></td>
-                    <td class="text-center"><?php echo $show['passskype']?></td>
-                    <!--<td><a href="#">Editar</a>-<a href="#">Borrar</a></td>-->
+                    <td class="text-center"><?php echo $show['userGoogle']?></td>
+                    <td class="text-center"><?php echo $show['passGoogle']?></td>
+                    <td class="text-center"><?php echo $show['userMicrosoft']?></td>
+                    <td class="text-center"><?php echo $show['passMicrosoft']?></td>
+                    <td class="text-center"><?php echo $show['useriCloud']?></td>
+                    <td class="text-center"><?php echo $show['passiCloud']?></td>
+                    <td class="text-center"><?php echo $show['piniCloud']?></td>
+                    <td><a href="#">Editar</a>-<a href="#">Borrar</a></td>
                 </tr>
             <?php
             } ?>

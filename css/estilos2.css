@@ -186,3 +186,11 @@ a:hover{
     margin-bottom: 10px;
     color: #000;
 }
+.form_search .btn_search{
+    background: #1faacb;
+    color: #fff;
+    padding: 0 20px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
