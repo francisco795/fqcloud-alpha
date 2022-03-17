@@ -1,5 +1,6 @@
 <?php
 include 'conexion.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,13 +26,11 @@ include 'conexion.php';
             <li class="nav-item">
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
-            <li class="nav-item">
-                <a href="buscar.php" clas="nav-item">Búsquemos un usuario</a>
-            </li>
         </ul>
     </div>
+    
 
-    </form> 
+    <form> 
         <h2 class="text-center">Usuarios activos</h2>
         <table border="1" bgcolor="gray">
             <tr>
@@ -76,12 +75,67 @@ include 'conexion.php';
                     <td class="text-center"><?php echo $show['passMicrosoft']?></td>
                     <td class="text-center"><?php echo $show['useriCloud']?></td>
                     <td class="text-center"><?php echo $show['passiCloud']?></td>
-                    <td class="text-center"><?php echo $show['piniCloud']?></td>
+                    <td class="text-center"><?php echo $show['piniPhone']?></td>
                     <td><a href="#">Editar</a>-<a href="#">Borrar</a></td>
                 </tr>
             <?php
             } ?>
         </table>
-    </div>
+    </form>
+    <h1>Buscador!</h1>
+    <form action="contenido.php" method="POST">
+        <input type="text" name="buscar">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <h1>Resultados</h1>
+    <table border="1" bgcolor="gray">
+        <tr>
+            <td class="text-center">id</td>
+            <td class="text-center">Nombre</td>
+            <td class="text-center">Correo</td>
+            <td class="text-center">Área</td>
+            <td class="text-center">Usurio en red</td>
+            <td class="text-center">Password de red</td>
+            <td class="text-center">ID Anydesk</td>
+            <td class="text-center">Password de anydesk</td>
+            <td class="text-center">Usuario de Google</td>
+            <td class="text-center">Password de Google</td>
+            <td class="text-center">Usuario en Microsoft</td>
+            <td class="text-center">Contraseña de Microsoft</td>
+            <td class="text-center">Usuario de iCloud</td>
+            <td class="text-center">Contraseña de iCloud</td>
+            <td class="text-center">Pin de iCloud</td>
+        </tr>
+
+    
+    <?php
+
+    include 'buscar.php';
+    
+    while($show=mysqli_fetch_array($sql_query)){?>
+
+    <tr>
+        <td class="text-center"><?php echo $show['id']?></td>
+        <td class="text-center"><?php echo $show['nombre']?></td>
+        <td class="text-center"><?php echo $show['correo']?></td>
+        <td class="text-center"><?php echo $show['area']?></td>
+        <td class="text-center"><?php echo $show['userred']?></td>
+        <td class="text-center"><?php echo $show['passred']?></td>
+        <td class="text-center"><?php echo $show['idanydesk']?></td>
+        <td class="text-center"><?php echo $show['passanydesk']?></td>
+        <td class="text-center"><?php echo $show['userGoogle']?></td>
+        <td class="text-center"><?php echo $show['passGoogle']?></td>
+        <td class="text-center"><?php echo $show['userMicrosoft']?></td>
+        <td class="text-center"><?php echo $show['passMicrosoft']?></td>
+        <td class="text-center"><?php echo $show['useriCloud']?></td>
+        <td class="text-center"><?php echo $show['passiCloud']?></td>
+        <td class="text-center"><?php echo $show['piniPhone']?></td>
+    </tr>
+
+
+    <?php }
+    ?>
+    </table>
 </body>
 </html>
