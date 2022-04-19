@@ -4,7 +4,7 @@ include 'conexion.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
@@ -25,12 +25,10 @@ include 'conexion.php';
             <li class="nav-item">
                 <a href="alta.php" clas="nav-item">Registro de usuarios</a>
             </li>
-            <li class="nav-item">
-                <a href="buscar.php" class="nav-item">Busquemos un usuario</a>
-            </li>
+
         </ul>
     </div>
-        <h2 class="text-center">Usuarios disponibles</h2>
+        <h2 class="text-center"><font COLOR="black">Usuarios disponibles</font></h2>
         <table border="1" bgcolor="gray">
             <tr>
                 <td class="text-center">id</td>

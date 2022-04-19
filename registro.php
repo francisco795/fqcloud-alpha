@@ -6,7 +6,7 @@ if(isset($_SESSION['usuario'])){   //Isset establece que la sesión está defini
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
     $password = $_POST['password'];
-    $password2 = $_POST['password2'];
+    $password2 = $_POST['password2'];   
 
     
 
@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errores .= '<li>Por favor ingresa tus datos de manera correcta.</li>';
     }else{
         try{
-            $conexion = new PDO('mysql:host=127.0.0.1;dbname=fqc1','root','');    //conexión con bd mediante excepciones
+            $conexion = new PDO('mysql:host=127.0.0.1;dbname=fqc','root','');    //conexión con bd mediante excepciones
         }catch(PDOException $e){
             echo "Error: " . $e->getMessage();
         }

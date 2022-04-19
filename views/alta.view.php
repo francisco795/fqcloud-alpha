@@ -12,58 +12,37 @@
 <meta name="keywords" content="Estambres, Tejidos">
 </head>
 <body>
-    <div class="contenedor">
-        <h1 class="text-center">Registra un FQCito!</h1>
+<div class="contenedor">
+        <h1 class="text-center">FQControl!</h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="contenido.php" class="nav-item">Consulta de usuarios</a>
+                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
             </li>
             <li class="nav-item">
-                <a href="alta.php" clas="nav-item">Registro de usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a href="buscar.php" class="nav-item">Busquemos un usuario</a>
+                <a href="contenido.php" clas="nav-item">Usuarios activos</a>
             </li>
         </ul>
     </div>
-    <div class="container-alta">
-        <h4 class="text-center">Registrando un nuevo usuario</h4>
-        
-        <form action="/alta.php" method="POST" class="formulario" name="alta">
+    <form action="alta.php" method="POST">
+        <h2>Registra un FQCito/a</h2>
+        <input type="text" placeholder="&#128100; Nombre"name="nombre">
+        <input type="text" placeholder="&#128231; Correo"name="correo">
+        <input type="text" placeholder="&#128101; Área"name="area">
+        <input type="text" placeholder="&#128100; Usuario en Red"name="userred">
+        <input type="text" placeholder="&#128273; Password en red"name="passred">
+        <input type="text" placeholder="&#128100; ID de Anydesk"name="idanydesk">
+        <input type="text" placeholder="&#128273; Password de Anydesk"name="passanydesk">
+        <input type="text" placeholder="&#128100; Usuario de Google"name="userGoogle">
+        <input type="text" placeholder="&#128273; Password de Google"name="passGoogle">
+        <input type="text" placeholder="&#128100; Usuario de Microsoft"name="userMicrosoft">
+        <input type="text" placeholder="&#128273; Password de Microsoft"name="passMicrosoft">
+        <input type="text" placeholder="&#128100; Usuario de iCloud"name="useriCloud">
+        <input type="text" placeholder="&#128273; Password de iCloud"name="passiCloud">
+        <input type="text" placeholder="&#128241; Pin de iPhone"name="piniphone">
 
-            <div class="form-group">
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" class="form-control" required>
-            </div>
-        
-            
-            <div class="form-group">
-                <input type="text" name="correo" placeholder="Correo" class="form-control" required>
-            </div>
+        <input type="submit" value="Agregar" name="btnagregar">
 
-            
-            <div class="form-group">
-                <input type="text" name="area" placeholder="Area" class="form-control" required>
-            </div>
-
-            
-            <div class="form-group">
-                <input type="text" name="userred" placeholder="Usuario en red" class="form-control" required>
-            </div>
-
-            
-            <div class="form-group">
-                <input type="text" name="idanydesk" placeholder="idAnydesk" class="form-control" required>
-            </div>
-
-                <?php if(!empty($errores)) : ?>
-                    <div class="error">
-                        <ul>
-                            <?php echo $errores; ?>
-                        </ul>
-                    </div>
-                <?php endif; ?>
-            <button class="submit" action="alta.php">Guardar</button>
-        </form>
-    </div>
-</div>
+    </form>
+</body>
+</html>
