@@ -32,7 +32,7 @@ include 'conexion.php';
         <input type="submit" value="Buscar">
     </form>
 
-    <h2><font COLOR="black">Resultados</font></h2>
+    <h2><font COLOR="black">Usuarios activos</font></h2>
     <table border="1" bgcolor="gray">
         <tr>
             <td class="text-center">id</td>
