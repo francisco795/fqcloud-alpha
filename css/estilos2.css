@@ -13,6 +13,10 @@ body{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+div{
+    font-size: 16px;
+
+}
 
 .btn{
     display: block;
@@ -199,4 +203,11 @@ a:hover{
     border: 0;
     cursor: pointer;
     margin-left: 10px;
+}
+.title_edit{
+    position: absolute;
+    right: 7%;
+    color: #000;
+    text-decoration: none;
+
 }

@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/bacaf2f5fc.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/estilos2.css">
-<link rel="stylesheet" type="text/css"  href="estilos2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos2.css">
 <title>Inicio</title>
 <meta name="keywords" content="Estambres, Tejidos">
 </head>
