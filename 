@@ -1,0 +1,71 @@
+[33mcommit 36d3c0532d61c329fa6c785486ec08417735068f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Thu Apr 28 23:33:25 2022 -0500
+
+    Bugs fixed in 'editar'
+
+[33mcommit f031a61457b00bf12e1e6fb9bb74ab7ed2edeffa[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Wed Apr 27 17:26:30 2022 -0500
+
+    New page 'editar' added
+
+[33mcommit 9cf4d96eb9cec3c78a7492b9d087a4459028c6bb[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Thu Apr 21 23:45:39 2022 -0500
+
+    Daily update, cleaning code
+
+[33mcommit 8a3d9e7841aa2bdcb15ed38420e6e311f40fc072[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Wed Apr 20 18:33:15 2022 -0500
+
+    Sintaxis errors fixed
+
+[33mcommit 49f0343a58e6e873b2970262dc8ead7090d4e8a8[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Tue Apr 19 17:14:54 2022 -0500
+
+    Useless pages deleted
+
+[33mcommit e9296e8716c6374a3457bc1cde2c9177446b970b[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Tue Apr 19 17:13:15 2022 -0500
+
+    Bugs fixed to upload a new user
+
+[33mcommit c1434c0b123aacd48f1257c75494ef1ea86a2794[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Wed Mar 16 21:57:21 2022 -0600
+
+    Search users by named function finished, all functions works
+
+[33mcommit aad3a21ff3d78366219842cf5cb1cd77f4597335[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Thu Mar 10 18:38:08 2022 -0600
+
+    Daily progress, users search update (not finished)
+
+[33mcommit 936269106e215bcfc92a59c5f11d7661229c4f20[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Tue Feb 15 18:25:46 2022 -0600
+
+    New buscar por nombre page added, not completed yet
+
+[33mcommit 041bbbff3336f925a5bd600497cd1a7daaa9ef86[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Wed Feb 2 12:56:27 2022 -0600
+
+    New page to see all the avalible users
+
+[33mcommit 3811dd4d199231491d9f4f43acc2b1c97a976b2b[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Fri Jan 28 14:37:59 2022 -0600
+
+    New notebooks, users register and fist version of buscar, to search users by name
+
+[33mcommit 0c74b98b4dae31adaf272f6d2920a116fa546c20[m
+Author: francisco795 <franciscohdzcruz9@gmail.com>
+Date:   Mon Jan 24 13:23:46 2022 -0600
+
+    First upload of the project
