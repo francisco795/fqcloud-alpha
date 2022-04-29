@@ -10,6 +10,35 @@ $id = $_GET['id'];
 $m = "SELECT * FROM users WHERE id = '$id'";
 $modificar = $conexion->query($m);
 $dato = $modificar->fetch_array();
+
+if(isset($_POST['modificar'])){
+    $id = $_POST['id'];
+    //escapes special characters in a string for use in an SQL query (evita inyeccion sql)
+    $nombre = $conexion->real_escape_string($_POST['mNombre']);
+    $correo = $conexion->real_escape_string($_POST['mCorreo']);
+    $area = $conexion->real_escape_string( $_POST['mArea']);
+    $userred = $conexion->real_escape_string($_POST['mUserred']);
+    $passred = $conexion->real_escape_string( $_POST['mPassred']);
+    $idanydesk = $conexion->real_escape_string($_POST['mIdanydesk']);
+    $passanydesk = $conexion->real_escape_string( $_POST['mPassanydesk']);
+    $userGoogle = $conexion->real_escape_string( $_POST['mUserGoogle']);
+    $passGoogle = $conexion->real_escape_string( $_POST['mPassGoogle']);
+    $userMicrosoft = $conexion->real_escape_string( $_POST['mUserMicrosoft']);
+    $passMicrosoft = $conexion->real_escape_string( $_POST['mPassMicrosoft']);
+    $useriCloud = $conexion->real_escape_string($_POST['mUseriCloud']);
+    $passiCloud = $conexion->real_escape_string( $_POST['mPassiCloud']);
+    $piniPhone = $conexion->real_escape_string( $_POST['mPiniPhone']);
+
+    //Query to edit
+    $updt = "UPDATE users SET Nombre = '$nombre', correo = '$correo', area = '$area', userred = '$userred', passred = '$passred', idanydesk ='$idanydesk',
+        passanydesk = '$passanydesk', userGoogle = '$userGoogle', passGoogle = '$passGoogle', userMicrosoft = '$userMicrosoft', passMicrosoft = '$passMicrosoft',
+        useriCloud = '$useriCloud', passiCloud = '$passiCloud', piniPhone = '$piniPhone' WHERE id = '$id'";
+    
+    $updated = $conexion->query($updt);
+    header("location:index.php");
+
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,8 +65,9 @@ $dato = $modificar->fetch_array();
     <h2><font COLOR ="black">Editar datos</font></h2>
     <div class="container">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-            <?php include 'editar.php'; ?>
             <div class="row">
+                <!-- The ID Input is hide-->
+                <input type="hidden" name="id" value="<?php echo $dato['id']; ?>">
                 <input type="text" class="form-control" name="mNombre" value="<?php echo $dato['nombre'];?>" placeholder="Nombre">
             </div>
             <div class="row">
@@ -65,7 +95,7 @@ $dato = $modificar->fetch_array();
                 <input type="text" class="form-control" name="mPassGoogle" value="<?php echo $dato['passGoogle'];?>" placeholder="PassGoogle">
             </div>
             <div class="row">
-                <input type="text" class="form-control" name="mUserMicrosofr" value="<?php echo $dato['userMicrosoft'];?>" placeholder="UseMicrosoft">
+                <input type="text" class="form-control" name="mUserMicrosoft" value="<?php echo $dato['userMicrosoft'];?>" placeholder="UserMicrosoft">
             </div>
             <div class="row">
                 <input type="text" class="form-control" name="mPassMicrosoft" value="<?php echo $dato['passMicrosoft'];?>" placeholder="PassMicrosoft">
