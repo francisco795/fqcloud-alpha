@@ -48,6 +48,7 @@
                 </tr>
             <?php
             } ?>
+            <a href="nuevodisp.php">Agregar nuevo usuario disponible</a>
         </table>
     </div>
 </body>

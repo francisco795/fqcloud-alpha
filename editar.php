@@ -64,6 +64,7 @@ if(isset($_POST['modificar'])){
     </div>
     <h2><font COLOR ="black">Editar datos</font></h2>
     <div class="container">
+        <a href="contenido.php">Volver</a>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <div class="row">
                 <!-- The ID Input is hide-->

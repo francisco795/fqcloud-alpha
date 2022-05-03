@@ -73,7 +73,7 @@
         <td class="text-center"><?php echo $show['useriCloud']?></td>
         <td class="text-center"><?php echo $show['passiCloud']?></td>
         <td class="text-center"><?php echo $show['piniPhone']?></td>
-        <td><a href="editar.php?id=<?php echo $show['id'];?>">Editar</a> -<a href="#">Borrar</a></td>
+        <td><a href="editar.php?id=<?php echo $show['id'];?>">Editar</a> <a href="borrar.php?id=<?php echo $show['id'];?>">Borrar</a></td>
     </tr>
 
 
