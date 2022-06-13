@@ -16,11 +16,15 @@
 
 		<form class="formulario" name="login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
 			<div class="form-group">
-				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Usuario">
+				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Correo FQC">
 			</div>
 
 			<div class="form-group">
-				<i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password" placeholder="Password">
+				<i class="icono izquierda fa fa-lock"></i><input class="password" type="password" name="password" placeholder="Contraseña">
+			</div>
+
+			<div class="form-group">
+				<i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password2" placeholder="Repite la contraseña">
 				<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
 			</div>
 
@@ -35,8 +39,8 @@
 		</form>
 
 		<p class="texto-registrate">
-			¿Aún no tienes cuenta?
-			<a href="registrate.php">Regístrate</a>
+			¿Ya tienes cuenta?
+			<a href="login.php">Iniciar Sesión</a>
 		</p>
 
 	</div>

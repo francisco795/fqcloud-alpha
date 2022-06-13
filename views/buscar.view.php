@@ -50,6 +50,7 @@
             include 'buscar.php';
             include 'conexion.php';
 
+
             while($show=mysqli_fetch_array($sql_query)){?>
                 <tr>
                     <td class="text-center"><?php echo $show['id']?></td>

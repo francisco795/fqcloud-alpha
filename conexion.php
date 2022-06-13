@@ -8,6 +8,4 @@ $bd  = "fqc";
 $conexion = new mysqli($host,$user,$clave,$bd);
 
 
-
-
 ?>

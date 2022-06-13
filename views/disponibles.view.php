@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="css/estilos2.css">
-    <title class="text-center">Usuarios disponibles</title>
-    <meta name="keywords" content="Estambres, Tejidos">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>FQControl</title>
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="text-center">FQControl!</h1>
+        <h1 class="text-center">FQControl©</h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -21,7 +22,7 @@
 
         </ul>
     </div>
-        <h2 class="text-center"><font COLOR="black">Usuarios disponibles</font></h2>
+        <h2 class="text-center"><font COLOR="WHITE">Usuarios disponibles</font></h2>
         <table border="1" bgcolor="gray">
             <tr>
                 <td class="text-center">id</td>

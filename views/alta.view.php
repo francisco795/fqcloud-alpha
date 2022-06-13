@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="css/estilos2.css">
-    <link rel="stylesheet" type="text/css"  href="estilos2.css">
-    <title>Registra un usuario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>FQControl</title>
 </head>
 <body>
 <div class="contenedor">
-        <h1 class="text-center">FQControl!</h1>
+        <h1 class="text-center">FQControl©</h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -36,7 +37,6 @@
         <input type="text" placeholder="&#128100; Usuario de iCloud"name="useriCloud">
         <input type="text" placeholder="&#128273; Password de iCloud"name="passiCloud">
         <input type="text" placeholder="&#128241; Pin de iPhone"name="piniphone">
-
         <input type="submit" value="Agregar" name="btnagregar">
 
     </form>

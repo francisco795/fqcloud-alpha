@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/estilos1.css" rel="stylesheet"/>
-    <title>FQControl Online</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>FQControl</title>
 </head>
 <body>
-    <div class="contenedor">
-        <h1 class="text-center"><font COLOR ="black">FQControl!</font></h1>
+    <<div class="contenedor">
+        <h1 class="text-center"><font COLOR ="WHITE">FQControl©</font></h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -21,13 +21,13 @@
             </li>
         </ul>
     </div>
-    <h2><font COLOR ="black">Busca un usuario</font></h2>
+    <h2><font COLOR ="WHITE">Busca un usuario</font></h2>
     <form action="contenido.php" method="POST">
         <input type="text" name="buscar">
         <input type="submit" value="Buscar">
     </form>
 
-    <h2><font COLOR="black">Usuarios activos</font></h2>
+    <h2><font COLOR="white">Usuarios activos</font></h2>
     <table border="1" bgcolor="gray">
         <div class="container-table">
             <tr>
