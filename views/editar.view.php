@@ -22,14 +22,14 @@ $dato = $modificar->fetch_array();
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="text-center"><font COLOR ="black">FQControl!</font></h1>
+        <h1 class="text-center"><font COLOR ="black">FQControl©</font></h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
+                <a href="disponibles.php" class="nav-item"><b>Usuarios disponibles</b></a>
             </li>
             <li class="nav-item">
-                <a href="alta.php" clas="nav-item">Registro de usuarios</a>
+                <a href="alta.php" clas="nav-item"><b>Registro de usuarios</b></a>
             </li>
         </ul>
     </div>

@@ -11,13 +11,13 @@
 <body>
 <div class="contenedor">
         <h1 class="text-center">FQControl©</h1>
-        <a href="cerrar.php">Cerrar sesión</a>
+        <a href="cerrar.php"><b>Cerrar sesión</b></a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
+                <a href="disponibles.php" class="nav-item"><b>Usuarios disponibles</b></a>
             </li>
             <li class="nav-item">
-                <a href="contenido.php" clas="nav-item">Usuarios activos</a>
+                <a href="contenido.php" clas="nav-item"><b>Usuarios activos</b></a>
             </li>
         </ul>
     </div>

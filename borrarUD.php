@@ -8,7 +8,7 @@ if(isset($_SESSION['usuario'])){
 }
 
 $id = $_GET['id'];
-$delete = "DELETE FROM users WHERE id = '$id'";
+$delete = "DELETE FROM users_disponibles WHERE id = '$id'";
 $deleted = $conexion->query($delete);
 
 header("Location: contenido.php");

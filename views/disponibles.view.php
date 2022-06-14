@@ -11,13 +11,13 @@
 <body>
     <div class="contenedor">
         <h1 class="text-center">FQControl©</h1>
-        <a href="cerrar.php">Cerrar sesión</a>
+        <a href="cerrar.php"><b>Cerrar sesión</b></a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="contenido.php" class="nav-item">Usuarios activos</a>
+                <a href="contenido.php" class="nav-item"><b>Usuarios activos</b></a>
             </li>
             <li class="nav-item">
-                <a href="alta.php" clas="nav-item">Registro de usuarios</a>
+                <a href="alta.php" clas="nav-item"><b>Registro de usuarios</b></a>
             </li>
 
         </ul>
@@ -30,6 +30,7 @@
                 <td class="text-center">Usuario en red</td>
                 <td class="text-center">Contraseña de red</td>
                 <td class="text-center">Contraseña de correo</td>
+                <td class="text-center">Opciones</td>
             </tr>
             <?php 
             include 'conexion.php';
@@ -45,7 +46,8 @@
                     <td class="text-center"><?php echo $show['correo']?></td>
                     <td class="text-center"><?php echo $show['userred']?></td>
                     <td class="text-center"><?php echo $show['passred']?></td>
-                    <td class="text-center"><?php echo $show['passcorreo']?></td>
+                    <td class="text-center"><?php echo $show['passGoogle']?></td>
+                    <td><a href="editarUD.php?id=<?php echo $show['id'];?>"><font COLOR=#FF740A><b>Editar</b></a> <a href="borrarUD.php?id=<?php echo $show['id'];?>"><font COLOR=#FF740A><b>Borrar</b></a></td>
                 </tr>
             <?php
             } ?>

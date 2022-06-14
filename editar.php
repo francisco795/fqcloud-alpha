@@ -12,6 +12,7 @@ $modificar = $conexion->query($m);
 $dato = $modificar->fetch_array();
 
 if(isset($_POST['modificar'])){
+    
     $id = $_POST['id'];
     //escapes special characters in a string for use in an SQL query (evita inyeccion sql)
     $nombre = $conexion->real_escape_string($_POST['mNombre']);
@@ -36,33 +37,38 @@ if(isset($_POST['modificar'])){
     
     $updated = $conexion->query($updt);
     header("location:index.php");
-
+    ?>
+    <script>
+        alert("Registro modificado");
+    </script>
+    <?php
 
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/estilos1.css" rel="stylesheet"/>
-    <title>FQControl Online</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>FQControl</title>
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="text-center"><font COLOR ="black">FQControl!</font></h1>
+        <h1 class="text-center"><font COLOR ="white">FQControl©</font></h1>
         <a href="cerrar.php">Cerrar sesión</a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
+                <a href="disponibles.php" class="nav-item"><b>Usuarios disponibles</b></a>
             </li>
             <li class="nav-item">
-                <a href="alta.php" clas="nav-item">Registro de usuarios</a>
+                <a href="alta.php" clas="nav-item"><b>Registro de usuarios</b></a>
             </li>
         </ul>
     </div>
-    <h2><font COLOR ="black">Editar datos</font></h2>
+    <h2><font COLOR ="white">Editar datos</font></h2>
     <div class="container">
         <a href="contenido.php">Volver</a>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">

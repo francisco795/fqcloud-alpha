@@ -16,7 +16,7 @@
 
 		<form class="formulario" name="login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
 			<div class="form-group">
-				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Usuario">
+				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Correo FQC">
 			</div>
 
 			<div class="form-group">

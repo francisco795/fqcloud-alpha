@@ -9,15 +9,15 @@
 	<title>FQControl</title>
 </head>
 <body>
-    <<div class="contenedor">
+    <div class="contenedor">
         <h1 class="text-center"><font COLOR ="WHITE">FQControl©</font></h1>
-        <a href="cerrar.php">Cerrar sesión</a>
+        <a href="cerrar.php" class="nav-tabs"><b>Cerrar sesión</b></a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="disponibles.php" class="nav-item">Usuarios disponibles</a>
+                <a href="disponibles.php" class="nav-item"><b>Usuarios disponibles</b></a>
             </li>
             <li class="nav-item">
-                <a href="alta.php" clas="nav-item">Registro de usuarios</a>
+                <a href="alta.php" clas="nav-item"><b>Registro de usuarios</b></a>
             </li>
         </ul>
     </div>
@@ -73,7 +73,7 @@
         <td class="text-center"><?php echo $show['useriCloud']?></td>
         <td class="text-center"><?php echo $show['passiCloud']?></td>
         <td class="text-center"><?php echo $show['piniPhone']?></td>
-        <td><a href="editar.php?id=<?php echo $show['id'];?>">Editar</a> <a href="borrar.php?id=<?php echo $show['id'];?>">Borrar</a></td>
+        <td><a href="editar.php?id=<?php echo $show['id'];?>"><font COLOR=#FF740A><b>Editar</b></a> <a href="borrar.php?id=<?php echo $show['id'];?>"><font COLOR=#FF740A><b>Borrar</b></a></td>
     </tr>
 
 
