@@ -10,8 +10,8 @@ In top right, we can edit or delete any record of any user.
 ![image](https://user-images.githubusercontent.com/48299021/173673558-224e244c-0912-4114-815b-e824f88e5794.png)
 
 Edit page.
-![image](https://user-images.githubusercontent.com/48299021/173673845-3270a333-0282-4392-8333-e8e731ef5801.png)
 
+![image](https://user-images.githubusercontent.com/48299021/173673845-3270a333-0282-4392-8333-e8e731ef5801.png)
 
 In "usuarios disponibles" we can find all users there are not assigned yet. We can add a new user available and edit or delete the records.
 ![image](https://user-images.githubusercontent.com/48299021/173669076-5c580012-818b-4e42-8c4d-3be2adc05d74.png)
